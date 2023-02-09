@@ -18,10 +18,10 @@ services:
     volumes:
       - ./.docker/dbdata:/data/db
       - ./.docker/mongo:/docker-entrypoint-initdb.d
-    entrypoint:
+    environment:
       - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASWORD=root
-      - MONGO_INITDB_DATABSE=nest
+      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=nest
 
   mongo-express:
     image: mongo-express
