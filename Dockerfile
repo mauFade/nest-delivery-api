@@ -6,7 +6,7 @@ RUN npm install -g yarn --force
 
 RUN npm install -g @nestjs/cli
 
-RUN chmod +x ./docker/entrypoint
+# RUN chmod +x ./.docker/entrypoint.sh
 
 USER node
 
